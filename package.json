@@ -1,0 +1,26 @@
+{
+  "name": "newplaywright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "regression": "npx playwright test",
+    "APItests": "npx playwright test --grep @API",
+    "Webtests": "npx playwright test --grep @Web",
+    "Firefoxtest": "npx playwright test tests/FulltestcasewithPO.spec.js --config playwright.config1.js --project=firefox"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@azure/identity": "^4.13.1",
+    "@azure/playwright": "^1.1.6",
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.1",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^13.0.0",
+    "exceljs": "^4.4.0"
+  }
+}
